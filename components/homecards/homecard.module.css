@@ -1,51 +1,49 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .card {
-  background: black;
   position: relative;
-  cursor:pointer;
-  height: 240px;
-  border-radius: var(--radius);
-  overflow: hidden;
-  
+  cursor: pointer;
+  height: 400px;
 }
-
 .card:hover {
-  transform: translate(0 , -3px);
-  transition: all .2s ease-in;
+  transform: translate(0, -3px);
+  transition: all 0.2s ease-in;
 }
 
-.video{
-    height: 100%;
+.video {
+  height: 100%;
 }
 .video video {
-    min-height: 240px;
-    max-height: 240px;
-    min-width: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index:1;
-    border-radius: var(--radius);
-    overflow: hidden;
+  min-height: 400px;
+  max-height: 400px;
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .glass {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+
   background: linear-gradient(
-  54deg,
-    var(--gradient_a) 21%,
+    54deg,
+    var(--gradient_a) 30%,
     rgba(107, 107, 242, 0) 75%
   );
-  position: absolute;
-  z-index:2;
-  border-radius: var(--radius);
-  overflow: hidden;
 }
-
-
 
 .glass .icon {
   display: flex;
@@ -57,9 +55,8 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  
 }
 
 .glass .copy h2 {
- height: 45px;
+  height: 45px;
 }

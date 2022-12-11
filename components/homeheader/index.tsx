@@ -1,21 +1,19 @@
+import FeatureList from "../featurelist";
 import styles from "./homeheader.module.css";
-import Pic from "./Pic";
+import Picture from "./Picture";
 
-export interface Props {}
-const HomeHeader: React.FC<Props> = (props) => {
+export interface Props {
+  children?: React.ReactNode;
+}
+const HomeHeader: React.FC<Props> = ({ children }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.portada}>
-        <div className={styles.portadaGlass}>
-          <p>
-            {/* Leading our community to sustain open source innovation. */}
-          </p>
-        </div>
-      </div>
       <div className={styles.meta}>
-        <Pic />
+        <Picture />
         <h2>Spreati</h2>
       </div>
+
+      {children}
     </div>
   );
 };

@@ -4,14 +4,14 @@ import IconSwitcher from "../common/IconSwitcher";
 import styles from "./homeheader.module.css";
 
 export type Props = {};
-const Pic: React.FC<Props> = (props) => {
+const Picture: React.FC<Props> = (props) => {
   return (
-    <div className={styles.picContainer}>
-      <div className={styles.picGlass}>
+    <div className={styles.picture}>
+      <div className={styles.glass}>
         <IconSwitcher name="applogo" />
       </div>
     </div>
   );
 };
 
-export default Pic;
+export default Picture;

@@ -1,0 +1,52 @@
+.container {
+  height: calc(100vh - 600px);
+  display: flex;
+  padding: 1em;
+  background: var(--bgmedia);
+  gap:.6em;
+  overflow-x: scroll;
+
+  align-items: center;
+
+}
+
+.card {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: var(--radius);
+  min-width:210px;
+}
+
+.video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+
+}
+
+.video video {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.glass {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  padding:1em;
+  background: linear-gradient(
+    -160deg,
+    var(--gradient_a) 12%,
+    rgba(107, 107, 242, 0) 75%
+  );
+}
