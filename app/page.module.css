@@ -1,0 +1,39 @@
+.app {
+  background: var(--bgapp);
+}
+
+.main {
+  height: 100vh;
+}
+
+.main :global .ant-tabs .ant-tabs-top {
+  margin: 0;
+  padding: 0;
+    padding:1em;
+
+}
+.main :global .ant-tabs-nav {
+  margin: 0;
+}
+.main :global .ant-tabs-nav-wrap {
+  height: 50px;
+}
+.main :global .ant-tabs {
+  color: var(--contrast);
+}
+.main :global .ant-tabs-nav-list {
+  padding:.6em;
+}
+.main .header {
+  height: calc(100vh - 400px);
+}
+
+.main .contenido {
+  height: 400px;
+  background: var(--bgmain);
+}
+
+.base {
+  overflow: hidden;
+  background: var(--bgapp);
+}
