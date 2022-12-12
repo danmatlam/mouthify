@@ -1,4 +1,5 @@
 import { Tabs } from "antd";
+import { Carousel } from "antd";
 
 interface iProfileTabs {
   label: string;
@@ -10,10 +11,9 @@ export interface Props {
   profileTabs: iProfileTabs[];
 }
 const ProfileTabs: React.FC<Props> = (props) => {
-  const onChange = (key: string) => {
-    console.log(key);
-  };
-
+  // const onChange = (key: string) => {
+  //   console.log(key);
+  // };
 
   const items = props.profileTabs.map((item) => {
     return {
@@ -22,16 +22,28 @@ const ProfileTabs: React.FC<Props> = (props) => {
       children: item.children,
     };
   });
+  const onChange = (currentSlide: number) => {
+    console.log(currentSlide);
+  };
 
   return (
-    <Tabs
-      centered
-      defaultActiveKey="1"
-      onChange={onChange}
-      items={items}
-      style={{width: '100%', height: '100%', padding: "0"}}
-    />
+    <Carousel afterChange={onChange}>
+      {items.map((item) => (
+        <>
+          {item.children}
+        </>
+      ))}
+    </Carousel>
   );
+
+  // return (
+  //   <Tabs
+  //     centered
+  //     defaultActiveKey="1"
+  //     onChange={onChange}
+  //     items={items}
+  //     style={{width: '100%', height: '100%', padding: "0"}}
+  //   />
+  // );
 };
 export default ProfileTabs;
- 

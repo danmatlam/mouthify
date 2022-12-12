@@ -1,24 +1,24 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap:.9em;
-  padding: .9em;
+  overflow-y: overlay;
+  height:100%;
 }
 
 .card {
   position: relative;
   cursor: pointer;
   height: 300px;
-  border-radius: 12pt;
+  border-radius: var(--radius);
   overflow: hidden;
+
 }
-.card:hover {
+/* .card:hover {
   transform: translate(0, -3px);
   transition: all 0.2s ease-in;
-}
+} */
 
 .video {
   height: 100%;
+  
 }
 .video video {
   min-height: 300px;
@@ -28,8 +28,7 @@
   object-fit: cover;
   position: absolute;
   z-index: 1;
-  overflow: hidden;
-  border-radius: 12pt;
+  border-radius: var(--radius);
   overflow: hidden;
 }
 
@@ -42,13 +41,15 @@
   padding: 1em;
   position: absolute;
   z-index: 2;
-  overflow: hidden;
 
   background: linear-gradient(
     54deg,
     var(--gradient_a) 30%,
     rgba(107, 107, 242, 0) 75%
   );
+  color: var(--contrast);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .glass .icon {

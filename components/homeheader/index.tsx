@@ -15,9 +15,9 @@ const HomeHeader: React.FC<Props> = ({ children }) => {
           <h2>Spreati</h2>
         </div>
         <div className={styles.meta}>
-          <p>
-            Solucionamos problemas mediante<br /> Software 🚀
-          </p>
+          <h2>
+            Solucionamos problemas mediante Software 🚀
+          </h2>
         </div>
       </div>
     </div>

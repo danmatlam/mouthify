@@ -1,6 +1,6 @@
 "use client";
 import { Col, Row, Tabs } from "antd";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import FeatureList from "../components/featurelist";
 import HomeBio from "../components/homebio";
 import HomeCards from "../components/homecards";
@@ -53,18 +53,30 @@ const contenidos: IContenido[] = [
 ];
 
 export default function Home({}) {
-  useEffect(() => {}, []);
+
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    const documentHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
+    };
+    documentHeight();
+    setMounted(true);
+  }, []);
+
+
+  if(!mounted) return "Rendering..."
+
   return (
     <div className={styles.app}>
       <Row justify="center">
         <Col xs={24} sm={21} md={15} lg={12} xl={10}>
           <main className={styles.main}>
             <div className={styles.header}>
-            <HomeHeader/>
+              <HomeHeader />
             </div>
             <ProfileTabs
               profileTabs={[
-               
                 {
                   label: "Servicios",
                   key: "1",
@@ -81,7 +93,6 @@ export default function Home({}) {
                   children: (
                     <div className={styles.contenido}>
                       <HomeBio />
-
                     </div>
                   ),
                 },

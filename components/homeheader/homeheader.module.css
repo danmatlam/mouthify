@@ -1,5 +1,4 @@
 .container {
-  background: var(--gradient_a);
   height: 100%;
 }
 .glass {
@@ -8,27 +7,28 @@
   width: 100%;
   align-items: center;
   background: linear-gradient(
-    21deg,
-    rgba(45, 105, 130, 0.732) 0%,
-    rgba(107, 107, 242, 0) 75%
+    6deg,
+    rgb(39, 39, 170) 3%,
+    rgba(240, 240, 251, 0) 6%
   );
   transition: 0.3s;
+   padding:1em;
 }
 .glass .image {
-  flex: 3;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding:1em;
 }
 .glass .meta {
-  flex: 9;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left:3em;
 }
 .picture {
   background: rgb(39, 39, 170);

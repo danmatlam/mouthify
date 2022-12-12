@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+:root {
+  --doc-height: 100%;
+}
 html {
   --bgapp: #1a202c;
   --bglienzo: #131722;
@@ -13,7 +15,6 @@ html {
   --gradient_a: #030b1bcc;
   --gradient_b: #0b111eea;
   --gradient_c: #ffffff99;
-
 }
 
 h1,
@@ -54,7 +55,7 @@ body {
     --bgapp: #1a202c;
   --bglienzo: #131722;
   --bgmedia: #000000;
-  --contrast: #ffffff;
+  --contrast: #ffffff99;
   --lumina: #ffff;
   --radius: 12pt;
   --gradient_a: #030b1bcc;

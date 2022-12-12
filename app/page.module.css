@@ -21,20 +21,20 @@
   padding: 0.6em;
 }
 
-
+/* .main :global .ant-tabs-nav-wrap {
+  height: 50px;
+  background: var(--bgapp);
+  } */
 
 .main .header {
   height: 210px;
+  background: var(--bgmedia);
+
 }
 
-.main :global .ant-tabs-nav-wrap {
-  height: 50px;
-  background: var(--bgapp);
-  }
-
 .main .contenido {
-   height:calc(100vh - 260px);
-   overflow-y: overlay;
-    background: var(--bgapp);
-  }
-
+  height: calc(var(--doc-height) - 210px);
+  background: var(--);
+  padding:12px 6px;
+  background: var(--bgapp);
+}
