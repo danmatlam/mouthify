@@ -14,9 +14,9 @@ const HomeHeader: React.FC<Props> = ({ children }) => {
       </div>
       <div className={styles.banner}>
         <div className={styles.glass}>
-          <h2>
+          <p>
             Soluciono problemas mediante <br /> Software 🚀
-          </h2>
+          </p>
         </div>
       </div>
       {children}
