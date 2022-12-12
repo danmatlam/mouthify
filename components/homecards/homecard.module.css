@@ -1,12 +1,16 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap:.9em;
+  padding: .9em;
 }
 
 .card {
   position: relative;
   cursor: pointer;
   height: 300px;
+  border-radius: 12pt;
+  overflow: hidden;
 }
 .card:hover {
   transform: translate(0, -3px);
@@ -24,6 +28,8 @@
   object-fit: cover;
   position: absolute;
   z-index: 1;
+  overflow: hidden;
+  border-radius: 12pt;
   overflow: hidden;
 }
 

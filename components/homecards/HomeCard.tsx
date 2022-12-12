@@ -22,11 +22,15 @@ const HomeCard: React.FC<Props> = ({ contenido }) => {
 
       <div className={styles.video}>
         <video
-          loop
-          muted
-          autoPlay
-          playsInline
-          style={{ width: "300px", height: "420px" }}
+
+
+          width="100%"
+  autoPlay
+  muted
+  loop
+  playsInline
+
+
         >
           <source src={contenido.clip} />
         </video>

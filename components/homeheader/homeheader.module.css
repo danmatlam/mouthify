@@ -1,70 +1,49 @@
-.container{
-  position:relative;
+.container {
+  background: var(--gradient_a);
+  height: 100%;
+}
+.glass {
+  display: flex;
   height: 100%;
   width: 100%;
-
-  background: var(--bglienzo);
-  display: flex;
-  justify-content: flex-end;
-  overflow: hidden;
-
-}
-
-
-  
-  
-  .banner {
-    width: 100%;
-    height:110px;
-
-  }
-
-
-.banner .glass{
-   background:var(--bgmedia);
-    width: 100%;
-    height:110px;
-   border-radius: var(--radius) var(--radius) 0 0;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-}
-
-
-.meta{
   align-items: center;
-  position: absolute;
-  z-index: 3;
-  top:calc(110px - 60px);
+  background: linear-gradient(
+    21deg,
+    rgba(45, 105, 130, 0.732) 0%,
+    rgba(107, 107, 242, 0) 75%
+  );
+  transition: 0.3s;
+}
+.glass .image {
+  flex: 3;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap:.6em;
-  padding:0 1em;
+  justify-content: center;
+  align-items: center;
 }
-
-.picture {
+.glass .meta {
+  flex: 9;
+  height: 100%;
   display: flex;
-  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.picture .glass {
-  /* border: 2.1pt solid var(--contrast); */
-  z-index: 3;
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
+.picture {
+  background: rgb(39, 39, 170);
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  background: var(--bgapp);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 3;
 }
-.picture .glass svg {
-  height: 90px;
-  width: 90px;
-  fill: var(--contrast);
-  border-radius: 24%;
-  padding: 10px;
+.picture svg {
+  fill: white;
+  width: 100%;
+  height: 54px;
+  font-size: 54px;
 }
-
-

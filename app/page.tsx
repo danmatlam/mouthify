@@ -57,7 +57,7 @@ export default function Home({}) {
   return (
     <div className={styles.app}>
       <Row justify="center">
-        <Col xs={24} sm={21} md={15} lg={12}>
+        <Col xs={24} sm={21} md={15} lg={12} xl={10}>
           <main className={styles.main}>
             <div className={styles.header}>
             <HomeHeader/>

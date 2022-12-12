@@ -5,7 +5,6 @@
 .main {
   height: 100vh;
 }
-
 .main :global .ant-tabs .ant-tabs-top {
   margin: 0;
   padding: 0;
@@ -25,20 +24,17 @@
 
 
 .main .header {
-  height: calc( 50vh - 50px);
-
+  height: 210px;
 }
 
 .main :global .ant-tabs-nav-wrap {
   height: 50px;
   background: var(--bgapp);
-  overflow: hidden;;
-  border-radius: var(--radius) var(--radius) 0 0;
-}
+  }
 
 .main .contenido {
-  height:50vh;
+   height:calc(100vh - 260px);
    overflow-y: overlay;
-   background: var(--bgmedia);
+    background: var(--bgapp);
   }
 
