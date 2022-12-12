@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import FeatureList from "../components/featurelist";
 import HomeBio from "../components/homebio";
 import HomeCards from "../components/homecards";
+import HomeHeader from "../components/homeheader";
 
 import ProfileTabs from "../components/hometabs";
 import { IContenido } from "../store/schema";
@@ -59,12 +60,13 @@ export default function Home({}) {
         <Col xs={24} sm={21} md={15} lg={12}>
           <main className={styles.main}>
             <div className={styles.header}>
-            <FeatureList data={contenidos} />
+            <HomeHeader/>
             </div>
             <ProfileTabs
               profileTabs={[
+               
                 {
-                  label: "Bienvenido",
+                  label: "Servicios",
                   key: "1",
                   children: (
                     <div className={styles.contenido}>
@@ -72,12 +74,14 @@ export default function Home({}) {
                     </div>
                   ),
                 },
+
                 {
                   label: "Contacto",
                   key: "2",
                   children: (
                     <div className={styles.contenido}>
                       <HomeBio />
+
                     </div>
                   ),
                 },

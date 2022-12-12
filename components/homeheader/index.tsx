@@ -12,7 +12,13 @@ const HomeHeader: React.FC<Props> = ({ children }) => {
         <Picture />
         <h2>Spreati</h2>
       </div>
-
+      <div className={styles.banner}>
+        <div className={styles.glass}>
+          <h2>
+            Soluciono problemas mediante <br /> Software 🚀
+          </h2>
+        </div>
+      </div>
       {children}
     </div>
   );

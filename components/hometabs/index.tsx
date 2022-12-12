@@ -25,6 +25,7 @@ const ProfileTabs: React.FC<Props> = (props) => {
 
   return (
     <Tabs
+      centered
       defaultActiveKey="1"
       onChange={onChange}
       items={items}

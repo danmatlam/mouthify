@@ -1,15 +1,12 @@
-
 import styles from "./bio.module.css";
-export type Props = {
- 
-};
+export type Props = {};
 
 const HomeBio: React.FC<Props> = (props) => {
   return (
     <div className={styles.container}>
-    <h2>
-    Some Bio here. 🚀
-    </h2>
+      <p>
+          Información de contacto 📍
+      </p>
     </div>
   );
 };
